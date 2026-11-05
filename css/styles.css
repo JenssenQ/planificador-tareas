@@ -352,3 +352,179 @@ body {
     font-size: 14px;
     color: var(--color-texto-suave);
 }
+
+/* REPRODUCTOR DE MÚSICA */
+.panel-musica {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.portada {
+    flex-shrink: 0;
+    width: 140px;
+    height: 135px;
+    margin-bottom: 13px;
+    background-color: var(--color-campo);
+    border-radius: var(--radio-panel);
+}
+
+.titulo-cancion {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.artista {
+    margin: 4px 0 14px;
+    font-size: 14px;
+}
+
+.progreso {
+    width: 210px;
+}
+
+.progress {
+    height: 6px;
+    overflow: visible;
+    background-color: var(--color-campo);
+}
+
+.progress-bar {
+    position: relative;
+    background-color: var(--color-campo);
+}
+
+/* el puntito del reproductor */
+.progress-bar::after {
+    content: "";
+    position: absolute;
+    right: -6px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    background-color: var(--color-campo);
+    border-radius: 50%;
+}
+
+.tiempos {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+    font-size: 12px;
+}
+
+.controles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    margin-top: 20px;
+}
+
+.btn-control {
+    padding: 0;
+    font-size: 24px;
+    line-height: 1;
+    color: #bdbdc0;
+    background: none;
+    border: 0;
+}
+
+.btn-play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+    font-size: 30px;
+    color: #ffffff;
+    background-color: var(--color-campo);
+    border: 0;
+    border-radius: 50%;
+}
+
+/* MINI CALENDARIO */
+.panel-calendario {
+    padding: 22px 32px;
+}
+
+.cabecera-calendario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.mes-anio {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.botones-mes {
+    display: flex;
+    gap: 4px;
+}
+
+.btn-mes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    font-size: 12px;
+    color: var(--color-texto);
+    background-color: var(--color-campo);
+    border: 0;
+    border-radius: 50%;
+}
+
+.table.calendario {
+    margin: 0;
+    text-align: center;
+    table-layout: fixed;
+}
+
+.table.calendario th,
+.table.calendario td {
+    position: relative;
+    height: 28px;
+    padding: 0;
+    font-size: 13px;
+    font-weight: 400;
+    vertical-align: middle;
+}
+
+.table.calendario th {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--color-texto-suave);
+}
+
+.dia-hoy {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: var(--color-gris);
+    border-radius: 50%;
+}
+
+/* puntito en los días con tareas */
+.dia-tarea::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 1px;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 4px;
+    background-color: var(--color-gris);
+    border-radius: 50%;
+}
