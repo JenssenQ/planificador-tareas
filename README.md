@@ -6,7 +6,7 @@ Aplicación web para organizar y dar seguimiento a tareas personales. Es el proy
 
 | Recurso | Enlace |
 | --- | --- |
-| Trello (tablero Scrum) | _Pendiente: agregar el enlace del tablero_ |
+| Trello (tablero Scrum) | [Proyecto individual: organizador de tareas](https://trello.com/invite/b/6aeca13d129ea1da1e08ebc4/ATTIbe077bd77ff350a3c3e15b3b45f6b245E0977C13/proyecto-individual-orgnizador-de-tareas) |
 | Figma (wireframe) | _Pendiente: agregar el enlace del archivo_ |
 | Demo (GitHub Pages) | _Pendiente: se publica al cerrar el Sprint 1_ |
 
