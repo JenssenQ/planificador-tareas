@@ -255,3 +255,100 @@ body {
     font-weight: 600;
     border-radius: var(--radio-campo);
 }
+
+/* LISTA DE TAREAS */
+.panel-lista {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+    padding-bottom: 0;
+    overflow: hidden;
+}
+
+.cabecera-lista {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    margin-top: -2px;
+    margin-bottom: 24px;
+}
+
+.filtros {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-filtro {
+    --bs-btn-color: var(--color-texto);
+    --bs-btn-bg: transparent;
+    --bs-btn-border-color: var(--color-texto);
+    --bs-btn-hover-color: var(--color-texto);
+    --bs-btn-hover-bg: var(--color-campo);
+    --bs-btn-hover-border-color: var(--color-texto);
+    --bs-btn-active-color: #ffffff;
+    --bs-btn-active-bg: var(--color-gris);
+    --bs-btn-active-border-color: var(--color-gris);
+
+    height: 34px;
+    padding: 0 20px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 50px;
+}
+
+/* solo aquí dentro hace scroll */
+.lista-tareas {
+    flex: 1;
+    min-height: 0;
+    margin-right: -20px;
+    padding-right: 12px;
+    padding-bottom: 32px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-texto-suave) transparent;
+}
+
+/* TARJETAS */
+.tarjeta-tarea {
+    height: 200px;
+    background-color: var(--color-tarjeta);
+    border: 0;
+    border-radius: var(--radio-panel);
+}
+
+.tarjeta-tarea .card-body {
+    padding: 20px;
+}
+
+.encabezado-tarjeta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.estado-tarea {
+    padding: 7px 24px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--color-texto);
+    background-color: var(--color-campo);
+}
+
+.fecha-tarea {
+    font-size: 13px;
+    color: var(--color-texto-suave);
+}
+
+.tarjeta-tarea .card-title {
+    margin: 22px 0 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.tarjeta-tarea .card-text {
+    margin: 0;
+    font-size: 14px;
+    color: var(--color-texto-suave);
+}
