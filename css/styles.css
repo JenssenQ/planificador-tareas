@@ -1,0 +1,10 @@
+/* ==========================================================================
+   Planificador de Tareas - Estilos personalizados
+   Bootstrap 5 aporta la base; aquí solo van los ajustes propios del proyecto.
+   ========================================================================== */
+
+/* Variables de diseño (se reutilizan en todo el archivo) */
+:root {
+  --color-primario: #0d6efd;
+  --espaciado-seccion: 2rem;
+}
