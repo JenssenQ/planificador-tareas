@@ -79,11 +79,11 @@
                 <div class="card tarjeta-tarea">
                   <div class="card-body">
                     <div class="encabezado-tarjeta">
-                      <span class="badge rounded-pill estado-tarea">Estado</span>
-                      <small class="fecha-tarea">Fecha entrega</small>
+                      <span class="badge rounded-pill estado-tarea estado-en-proceso">En proceso</span>
+                      <small class="fecha-tarea">Entrega: 08 nov</small>
                     </div>
-                    <h3 class="card-title">Titulo tarea</h3>
-                    <p class="card-text">Descripción tarea</p>
+                    <h3 class="card-title">Terminar la landing page</h3>
+                    <p class="card-text">Maquetar la sección de inicio con Bootstrap y revisar que se vea bien en celular.</p>
                   </div>
                 </div>
               </div>
@@ -136,6 +136,9 @@
             </select>
           </div>
 
+          <!------------------- Alerta de error ----------------------->
+          <div class="alert alert-danger alerta-form d-none" id="alertaError" role="alert"></div>
+
           <div class="botones-form">
             <button type="submit" class="btn btn-agregar">Agregar tarea</button>
             <button type="reset" class="btn btn-limpiar">Limpiar</button>
@@ -148,9 +151,9 @@
             <h2 class="titulo-panel">Mis tareas</h2>
             <div class="filtros" role="group" aria-label="Filtrar tareas por estado">
               <button type="button" class="btn btn-filtro active">Todas</button>
-              <button type="button" class="btn btn-filtro">Estado</button>
-              <button type="button" class="btn btn-filtro">Estado</button>
-              <button type="button" class="btn btn-filtro">Estado</button>
+              <button type="button" class="btn btn-filtro">Pendiente</button>
+              <button type="button" class="btn btn-filtro">En proceso</button>
+              <button type="button" class="btn btn-filtro">Completada</button>
             </div>
           </div>
 
@@ -161,11 +164,11 @@
                 <article class="card tarjeta-tarea">
                   <div class="card-body">
                     <div class="encabezado-tarjeta">
-                      <span class="badge rounded-pill estado-tarea">Estado</span>
-                      <small class="fecha-tarea">Fecha entrega</small>
+                      <span class="badge rounded-pill estado-tarea estado-en-proceso">En proceso</span>
+                      <small class="fecha-tarea">Entrega: 08 nov</small>
                     </div>
-                    <h3 class="card-title">Titulo tarea</h3>
-                    <p class="card-text">Descripción tarea</p>
+                    <h3 class="card-title">Terminar la landing page</h3>
+                    <p class="card-text">Maquetar la sección de inicio con Bootstrap y revisar que se vea bien en celular.</p>
                   </div>
                 </article>
               </div>
@@ -174,11 +177,11 @@
                 <article class="card tarjeta-tarea">
                   <div class="card-body">
                     <div class="encabezado-tarjeta">
-                      <span class="badge rounded-pill estado-tarea">Estado</span>
-                      <small class="fecha-tarea">Fecha entrega</small>
+                      <span class="badge rounded-pill estado-tarea estado-pendiente">Pendiente</span>
+                      <small class="fecha-tarea">Entrega: 10 nov</small>
                     </div>
-                    <h3 class="card-title">Titulo tarea</h3>
-                    <p class="card-text">Descripción tarea</p>
+                    <h3 class="card-title">Estudiar eventos en JavaScript</h3>
+                    <p class="card-text">Repasar addEventListener y hacer los ejercicios del laboratorio de eventos.</p>
                   </div>
                 </article>
               </div>
@@ -187,11 +190,11 @@
                 <article class="card tarjeta-tarea">
                   <div class="card-body">
                     <div class="encabezado-tarjeta">
-                      <span class="badge rounded-pill estado-tarea">Estado</span>
-                      <small class="fecha-tarea">Fecha entrega</small>
+                      <span class="badge rounded-pill estado-tarea estado-completada">Completada</span>
+                      <small class="fecha-tarea">Entrega: 06 nov</small>
                     </div>
-                    <h3 class="card-title">Titulo tarea</h3>
-                    <p class="card-text">Descripción tarea</p>
+                    <h3 class="card-title">Subir avances a GitHub</h3>
+                    <p class="card-text">Hacer commit y push del proyecto individual con los avances del Sprint 1.</p>
                   </div>
                 </article>
               </div>
@@ -200,11 +203,11 @@
                 <article class="card tarjeta-tarea">
                   <div class="card-body">
                     <div class="encabezado-tarjeta">
-                      <span class="badge rounded-pill estado-tarea">Estado</span>
-                      <small class="fecha-tarea">Fecha entrega</small>
+                      <span class="badge rounded-pill estado-tarea estado-completada">Completada</span>
+                      <small class="fecha-tarea">Entrega: 05 nov</small>
                     </div>
-                    <h3 class="card-title">Titulo tarea</h3>
-                    <p class="card-text">Descripción tarea</p>
+                    <h3 class="card-title">Armar el tablero en Trello</h3>
+                    <p class="card-text">Crear las listas del Sprint 1 y una tarjeta por cada tarea del proyecto.</p>
                   </div>
                 </article>
               </div>
@@ -213,11 +216,11 @@
                 <article class="card tarjeta-tarea">
                   <div class="card-body">
                     <div class="encabezado-tarjeta">
-                      <span class="badge rounded-pill estado-tarea">Estado</span>
-                      <small class="fecha-tarea">Fecha entrega</small>
+                      <span class="badge rounded-pill estado-tarea estado-pendiente">Pendiente</span>
+                      <small class="fecha-tarea">Entrega: 14 nov</small>
                     </div>
-                    <h3 class="card-title">Titulo tarea</h3>
-                    <p class="card-text">Descripción tarea</p>
+                    <h3 class="card-title">Repasar la guía de Java</h3>
+                    <p class="card-text">Leer la guía del taller y practicar clases, objetos y constructores.</p>
                   </div>
                 </article>
               </div>
@@ -237,6 +240,6 @@
     crossorigin="anonymous"></script>
 
   <!-- Lógica propia -->
-  <script src="js/script.js" defer></script>
+  <script src="js/app.js" defer></script>
 </body>
 </html>

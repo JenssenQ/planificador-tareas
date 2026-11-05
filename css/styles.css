@@ -14,6 +14,11 @@
     --color-texto: #1e1e1e;
     --color-texto-suave: #5c5c5c;
 
+    /* Estados de las tareas */
+    --color-pendiente: #f6b26b;
+    --color-en-proceso: #7cb8ff;
+    --color-completada: #7fd99a;
+
     /* Medidas */
     --radio-ventana: 28px;
     --radio-panel: 24px;
@@ -180,8 +185,8 @@ body {
     margin-bottom: 26px;
 }
 
-.grupo-campo {
-    margin-bottom: 40px;
+.grupo-campo + .grupo-campo {
+    margin-top: 40px;
 }
 
 .panel-formulario .form-label {
@@ -217,6 +222,15 @@ body {
 .panel-formulario ::placeholder {
     color: var(--color-texto);
     opacity: 0.8;
+}
+
+/* ALERTA DE ERROR (queda en el espacio libre, arriba de los botones) */
+.alerta-form {
+    margin: 8px 0 0;
+    padding: 8px 12px;
+    font-size: 13px;
+    line-height: 1.35;
+    border-radius: var(--radio-campo);
 }
 
 .botones-form {
@@ -339,6 +353,19 @@ body {
     font-weight: 600;
     color: var(--color-texto);
     background-color: var(--color-campo);
+}
+
+/* ESTADOS (solo cambia el color del badge) */
+.estado-pendiente {
+    background-color: var(--color-pendiente);
+}
+
+.estado-en-proceso {
+    background-color: var(--color-en-proceso);
+}
+
+.estado-completada {
+    background-color: var(--color-completada);
 }
 
 .fecha-tarea {

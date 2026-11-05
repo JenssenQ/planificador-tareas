@@ -25,7 +25,9 @@ planificador-tareas/
 ├── css/
 │   └── styles.css
 ├── js/
-│   └── script.js
+│   └── app.js
+├── img/
+│   └── backgroundOrganizadorTareas.jpg
 └── README.md
 ```
 
@@ -36,4 +38,8 @@ El trabajo se organiza con Scrum en un tablero de Trello. Cada sprint tiene un o
 ## Progreso
 
 - [ ] **Sprint 1:** interfaz con Bootstrap, tarjetas de tarea y validación del formulario.
+  - [x] Fase 1: repositorio, tablero de Trello y wireframe en Figma
+  - [x] Tarea 1: wireframe con Bootstrap
+  - [x] Tarea 2: tarjeta de tarea y lista de tareas
+  - [ ] Tarea 3: validación del formulario, README y GitHub Pages
 - [ ] **Sprint 2 en adelante:** funcionalidades dinámicas, consumo de APIs, backend e integración.
