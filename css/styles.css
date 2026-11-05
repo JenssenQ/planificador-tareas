@@ -43,3 +43,123 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
+
+/* VENTANA */
+.ventana {
+    display: flex;
+    flex-direction: column;
+
+    width: 90.1vw;
+    max-width: 1298px;
+    height: 83.4vh;
+    height: 83.4dvh;
+    max-height: 854px;
+    padding: 46px 44px 40px;
+
+    background-color: var(--color-ventana);
+    border-radius: var(--radio-ventana);
+}
+
+/* NAVBAR */
+.barra-nav {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    flex-shrink: 0;
+    margin-bottom: 32px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 50px;
+
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-texto);
+    text-decoration: none;
+}
+
+.nav-pildora {
+    --bs-nav-link-color: var(--color-texto);
+    --bs-nav-link-hover-color: var(--color-texto);
+    --bs-nav-pills-link-active-bg: var(--color-campo);
+    --bs-nav-pills-link-active-color: var(--color-texto);
+
+    flex-wrap: nowrap;
+    gap: 10px;
+    padding: 8px 9px;
+    background-color: var(--color-panel);
+    border-radius: 50px;
+}
+
+.nav-pildora .nav-link {
+    width: 86px;
+    height: 36px;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 50px;
+}
+
+.btn-perfil {
+    justify-self: end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 52px;
+    height: 52px;
+
+    font-size: 24px;
+    color: var(--color-texto);
+    background-color: var(--color-panel);
+    border: 0;
+    border-radius: 50%;
+}
+
+/* CONTENIDO */
+.contenido {
+    flex: 1;
+    min-height: 0;
+}
+
+.contenido > .vista.active {
+    display: flex;
+    gap: var(--espacio);
+    height: 100%;
+}
+
+.columna {
+    display: grid;
+    gap: var(--espacio);
+    min-height: 0;
+}
+
+/* alto de los paneles según el wideframe (380 / 280 y 268 / 392) */
+.columna-izq {
+    grid-template-rows: 380fr 280fr;
+    flex: 0 0 31.4%;
+}
+
+.columna-der {
+    grid-template-rows: 268fr 392fr;
+    flex: 1;
+    min-width: 0;
+}
+
+/* PANELES */
+.panel {
+    min-height: 0;
+    padding: 32px;
+    overflow-y: auto;
+    background-color: var(--color-panel);
+    border-radius: var(--radio-panel);
+}
+
+.titulo-panel {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+}

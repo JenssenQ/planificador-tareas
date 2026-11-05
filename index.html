@@ -12,13 +12,58 @@
     rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
     crossorigin="anonymous">
+  <!-- Bootstrap Icons y fuente Inter -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
   <!-- Estilos propios -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <!------------------- Ventana del organizador ----------------------->
+  <div class="ventana">
 
-  <!-- Aquí se construye la interfaz (Sprint 1 · Tarea 1) -->
+    <!------------------- Navbar ----------------------->
+    <header class="barra-nav">
+      <a class="logo" href="index.html">Logo - firma</a>
+
+      <ul class="nav nav-pills nav-pildora" id="menuVistas" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="tabHome" data-bs-toggle="pill" data-bs-target="#vistaHome" type="button"
+            role="tab" aria-controls="vistaHome" aria-selected="false">Home</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="tabTareas" data-bs-toggle="pill" data-bs-target="#vistaTareas" type="button"
+            role="tab" aria-controls="vistaTareas" aria-selected="true">Tareas</button>
+        </li>
+      </ul>
+
+      <button class="btn-perfil" type="button" aria-label="Perfil">
+        <i class="bi bi-person"></i>
+      </button>
+    </header>
+
+    <!------------------- Contenido (cambia con el navbar) ----------------------->
+    <main class="tab-content contenido">
+
+      <!------------------- Sección Home ----------------------->
+      <section class="tab-pane fade vista" id="vistaHome" role="tabpanel" aria-labelledby="tabHome" tabindex="0">
+
+        <div class="columna columna-izq">
+        </div>
+
+        <div class="columna columna-der">
+        </div>
+      </section>
+
+      <!------------------- Sección Tareas ----------------------->
+      <section class="tab-pane fade show active vista" id="vistaTareas" role="tabpanel" aria-labelledby="tabTareas" tabindex="0">
+      </section>
+
+    </main>
+  </div>
 
   <!-- Bootstrap JS (CDN) -->
   <script
