@@ -60,6 +60,41 @@
 
       <!------------------- Sección Tareas ----------------------->
       <section class="tab-pane fade show active vista" id="vistaTareas" role="tabpanel" aria-labelledby="tabTareas" tabindex="0">
+        <!------------------- Formulario ----------------------->
+        <form class="panel panel-formulario" id="formTarea">
+          <h2 class="titulo-panel">Nueva tarea</h2>
+
+          <div class="grupo-campo">
+            <label for="nombreTarea" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombreTarea" name="nombreTarea" placeholder="Nombre de la tarea">
+          </div>
+
+          <div class="grupo-campo">
+            <label for="descripcionTarea" class="form-label">Descripción</label>
+            <textarea class="form-control" id="descripcionTarea" name="descripcionTarea" rows="3"
+              placeholder="Descripción de la tarea"></textarea>
+          </div>
+
+          <div class="grupo-campo">
+            <label for="fechaEntrega" class="form-label">Fecha de entrega</label>
+            <input type="date" class="form-control" id="fechaEntrega" name="fechaEntrega">
+          </div>
+
+          <div class="grupo-campo">
+            <label for="estadoTarea" class="form-label">Estado</label>
+            <select class="form-select" id="estadoTarea" name="estadoTarea">
+              <option value="" selected disabled>Selecciona un estado</option>
+              <option value="pendiente">Pendiente</option>
+              <option value="en-proceso">En proceso</option>
+              <option value="completada">Completada</option>
+            </select>
+          </div>
+
+          <div class="botones-form">
+            <button type="submit" class="btn btn-agregar">Agregar tarea</button>
+            <button type="reset" class="btn btn-limpiar">Limpiar</button>
+          </div>
+        </form>
       </section>
 
     </main>

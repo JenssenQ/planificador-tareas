@@ -163,3 +163,95 @@ body {
     font-size: 22px;
     font-weight: 600;
 }
+
+/* FORMULARIO */
+.panel-formulario {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 31.4%;
+}
+
+.panel-formulario .titulo-panel {
+    margin-bottom: 26px;
+}
+
+.grupo-campo {
+    margin-bottom: 40px;
+}
+
+.panel-formulario .form-label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.panel-formulario .form-control,
+.panel-formulario .form-select {
+    height: 44px;
+    padding: 0 16px;
+    font-size: 15px;
+    color: var(--color-texto);
+    background-color: var(--color-campo);
+    border: 0;
+    border-radius: var(--radio-campo);
+}
+
+.panel-formulario textarea.form-control {
+    height: 104px;
+    padding-top: 12px;
+    resize: none;
+}
+
+.panel-formulario .form-control:focus,
+.panel-formulario .form-select:focus {
+    background-color: var(--color-campo);
+}
+
+.panel-formulario ::placeholder {
+    color: var(--color-texto);
+    opacity: 0.8;
+}
+
+.botones-form {
+    display: flex;
+    gap: 16px;
+    margin-top: auto;
+}
+
+.btn-agregar {
+    --bs-btn-color: #ffffff;
+    --bs-btn-bg: var(--color-gris);
+    --bs-btn-border-color: var(--color-gris);
+    --bs-btn-hover-color: #ffffff;
+    --bs-btn-hover-bg: #7a7a80;
+    --bs-btn-hover-border-color: #7a7a80;
+    --bs-btn-active-color: #ffffff;
+    --bs-btn-active-bg: #6e6e73;
+    --bs-btn-active-border-color: #6e6e73;
+
+    width: 190px;
+    height: 48px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: var(--radio-campo);
+}
+
+.btn-limpiar {
+    --bs-btn-color: var(--color-texto);
+    --bs-btn-bg: var(--color-panel);
+    --bs-btn-border-color: var(--color-texto);
+    --bs-btn-hover-color: var(--color-texto);
+    --bs-btn-hover-bg: var(--color-campo);
+    --bs-btn-hover-border-color: var(--color-texto);
+    --bs-btn-active-color: var(--color-texto);
+    --bs-btn-active-bg: var(--color-campo);
+    --bs-btn-active-border-color: var(--color-texto);
+
+    width: 110px;
+    height: 48px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: var(--radio-campo);
+}
