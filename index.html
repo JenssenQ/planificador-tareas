@@ -103,6 +103,43 @@
         </div>
 
         <div class="columna columna-der">
+          <!------------------- Frase motivacional ----------------------->
+          <article class="panel panel-frase">
+            <blockquote class="frase">Frase motivacional</blockquote>
+            <p class="autor">— Nombre Autor</p>
+          </article>
+
+          <!------------------- Tarea en curso ----------------------->
+          <article class="panel panel-trabajando">
+            <h2 class="titulo-panel">Trabajando</h2>
+
+            <div class="row g-4 flex-grow-1 align-items-center">
+              <div class="col-6">
+                <div class="card tarjeta-tarea">
+                  <div class="card-body">
+                    <div class="encabezado-tarjeta">
+                      <span class="badge rounded-pill estado-tarea">Estado</span>
+                      <small class="fecha-tarea">Fecha entrega</small>
+                    </div>
+                    <h3 class="card-title">Titulo tarea</h3>
+                    <p class="card-text">Descripción tarea</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="columna-terminar">
+                  <div>
+                    <h3 class="pregunta-terminar">¿Terminaste la tarea?</h3>
+                    <p class="texto-terminar">Márcala como finalizada para pasar a la siguiente.</p>
+                  </div>
+                  <button class="btn btn-agregar w-100" id="btnFinalizarTarea" type="button">
+                    <i class="bi bi-check-lg"></i> Finalizar tarea
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
         </div>
       </section>
 
